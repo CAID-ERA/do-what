@@ -1,7 +1,14 @@
 # do-what
-Give to a person after he upload his/her image including his/her face
+Give entertainment recommendations to a person after he/she uploads his/her image that contains his/her face
 Deploy the flask app by:
 ```
 cd Scripts
-sh ./init.sh
+sudo sh ./init.sh
+export FLASK_APP = app.py
+cd ../flask/
 ```
+run the web app without logging by:
+```nohup python3 -m flask run -h 0.0.0.0 --port 80 >/dev/null 2>&1 &```
+
+or run the app in the debug mode by:
+```python3 -m flask run -h 0.0.0.0 --port 80```

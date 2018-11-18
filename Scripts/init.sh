@@ -5,6 +5,3 @@ python3 -m pip install flask
 python3 -m pip install json
 python3 -m pip install pymysql
 python3 -m pip install 
-export FLASK_APP = app.py
-cd ../flask/
-nohup python3 -m flask run -h 0.0.0.0 --port 80 >/dev/null 2>&1 &

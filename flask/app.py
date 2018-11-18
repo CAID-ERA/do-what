@@ -6,6 +6,7 @@ from flask import jsonify, abort
 from recommend.Recommend import Evaluation
 from utils.movie_kind_index_converter import movie_kind_to_index
 from utils.get_image_url import get_image_url
+from utils.get_random_num import get_random_num
 import json
 import os
 import hashlib
@@ -25,6 +26,11 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return send_file('static/1/html/1.html')
+
+
+@app.route('/music')
+def music():
+    return send_file('static/bgm/music.html')
 
 
 @app.route('/main.html')
@@ -63,7 +69,12 @@ def branch():
                 # with open('error_case_3', 'w+') as f:
                 #     f.write(json.dumps(sorted(zip(general_map.values(), general_map.keys()))))
                 #     f.close()
-                movie_rank = sorted(zip(general_map.values(), general_map.keys()), reverse=True)[0:9]
+                random_index_list = get_random_num()
+                general_movie_rank = sorted(zip(general_map.values(), general_map.keys()), reverse=True)
+                movie_rank = []
+                for index in random_index_list:
+                    movie_rank.append(general_movie_rank[index])
+                # movie_rank = sorted(zip(general_map.values(), general_map.keys()), reverse=True)[0:9]
                 info = dict()
                 for j in range(1, 10):
                     selected_movie = movies[int(movie_rank[j -1][1])]
