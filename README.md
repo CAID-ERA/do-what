@@ -1,5 +1,4 @@
 # do-what
-Give entertainment recommendations to a person after he/she uploads his/her image that contains his/her face
 Deploy the flask app by:
 ```
 cd Scripts
