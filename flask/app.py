@@ -71,8 +71,8 @@ def branch():
                     info['pic%d' % j] = get_image_url('static/movies.json', selected_movie[0])
                     info['fun_name%d' % j] = selected_movie[0]
                     info['date%d' % j] = selected_movie[3]
-                    q = len(json.loads(selected_movie[4])) if len(json.loads(selected_movie[4])) <= 5 else 5
-                    info['introduction%d' % j] = ', '.join(json.loads(selected_movie[4])[:q])
+                    q = len(json.loads(selected_movie[2])) if len(json.loads(selected_movie[2])) <= 5 else 5
+                    info['introduction%d' % j] = ', '.join(json.loads(selected_movie[2])[:q])
                 db_conn.commit()
                 db_conn.close()
                 os.system('nohup python3 utils/kill.py --path %s'%'static/data/%s >/dev/null 2>&1 & \n\n'%token)
