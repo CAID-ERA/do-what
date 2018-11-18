@@ -8,7 +8,6 @@ class MoodScore():
         file = open(mood_rule_path, 'r')
         js = file.read()
         self.__mood_rule = json.loads(js)
-        # self.__mood_rule = {'0-0': 1, '1-0': 2, '2-0': 3, '3-0': 4, '4-0': 5}
         self.__mood = mood
         file.close()
 
@@ -27,7 +26,6 @@ class GenderScore():
         file = open(gender_rule_path, 'r')
         js = file.read()
         self.__gender_rule = json.loads(js)
-        # self.__gender_rule = {'0-0': 0, '1-0': 0}
         self.__gender = gender
         file.close()
 
@@ -65,7 +63,6 @@ class AgeScore():
 
 class Evaluation():
     def __init__(self, path, mood_rule_path='mood.json', gender_rule_path='gender.json'):
-        # 构造函数请传入人脸识别结果文件的路径
         file = open(path, 'r')
         js = file.read()
         data = json.loads(js)
@@ -75,11 +72,6 @@ class Evaluation():
         file.close()
 
     def FinalScore(self, movie_label, movie_age, movie_rate, para):
-        # 评价函数参数说明： movie_label为list， movie_age为单一int值，movie_rate为单一值 
-        # para为dict{'mood': , 'age': , 'gender': , 'rate': }
-        # print("movie_label: ", movie_label)
-        # print("movie_age: ", movie_age)
-        # print("movie_rate: ", movie_rate)
         score = 0
         size = 0
         for i in movie_label:
@@ -94,18 +86,7 @@ class Evaluation():
                 f.close()
         score /= size
         score *= para['mood']
-        # print("score: ", score)
-        # print("self.__age.GiveScore(movie_age) * para['age']: ", self.__age.GiveScore(movie_age) * para['age'])
         score += self.__age.GiveScore(movie_age) * para['age']
-        # print("score: ", score)
-        # print("self.__gender.GiveScore(movie_label) * para['gender']: ", self.__gender.GiveScore(movie_label) * para['gender'])
         score += self.__gender.GiveScore(movie_label) * para['gender']
-        # print("score: ", score)
-        # print("float(movie_rate) * para['rate']: ", float(movie_rate) * para['rate'])
         score += float(movie_rate) / 10 * para['rate']
         return score
-        # 返回结果说明： 一次返回一个电影的评分，请反复调用以给所有电影评分
-
-# 使用示范       
-# test = Evaluation('test')
-# print(test.FinalScore([0,1,2,8], 10, 8.5, {'mood': 0.25 , 'age': 0.25, 'gender': 0.25, 'rate': 0.25}))
