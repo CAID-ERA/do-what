@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+a {
+	color: white;
+}
+
+
+body {
+	background: url('/static/2/pic/bg.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	color: #fff;
+	min-height: 100vh;
+}
+
+.main-content {
+	margin: 0 auto;
+	padding: 60px 0 10px;
+	max-width: 1280px;
+	display: flex;
+	flex-direction: row;
+}
+
+.left-content {
+	flex-grow: 1;
+	padding: 10px;
+	margin-left: 70px;
+}
+
+.left-content .line {
+	margin: 40px 0;
+}
+
+.right-content {
+	margin-right: 170px;
+	margin-left:  100px;
+}
+
+.instruction {
+	text-align: center;
+	margin-top: 50px;
+    margin-bottom: 45px;
+}
+
+.avatar-container {
+	margin: 10px auto;
+	padding: 15px;
+	width: 300px;
+	height: 400px;
+	border: 1px solid #fff;
+	border-radius: 25px;
+}
+
+.avatar-container-hover {
+	margin: 10px auto;
+	padding: 15px;
+	width: 400px;
+	height: 500px;
+	border: 1px solid #f00;
+	border-radius: 25px;
+}
+
+
+.avatar {
+	width: 100%;
+	height: 100%;
+	object-fit: scale-down;
+}
+
+.upload-actions {
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+}
+
+.button {
+	display: inline-block;
+	padding: 0.5em 1em 0.5em 1em;
+	border: 1.5px solid #fff;
+	border-radius: 10px;
+}
+
+.button:hover {
+	background-color: #f00;
+}
+
+#l2 {
+	text-indent: 2em;
+}
+
+#l3 {
+	text-indent: 7em;
+}
+
+#l4 {
+	font-size: 1.4em;
+	text-indent: 5em;
+}
+
+#l5 {
+	font-size: 1.4em;
+	text-indent: 5em;
+}
+
+#l6 {
+	font-size: 1.4em;
+	text-indent: 5em;
+}
+
+.bgm {
+	margin-left: 7em;
+	margin-top: 6em;
+}
+
+.foot {
+	text-align: center;
+	margin-top: 3em;
+}
+
+.invisible {
+	visibility: hidden;
+}
+@media screen and (max-width: 1080px) {
+	.main-content {
+		max-width: 768px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.main-content {
+		max-width: 540px;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.main-content {
+		padding: 12px 0;
+		max-width: 100%;
+		flex-wrap: wrap;
+	}
+	.left-content {
+		width: 100%;
+	}
+	.left-content .line {
+		margin:  10px 0;
+	}
+	.right-content {
+		width: 100%;
+	}
+	.avatar-container {
+		width: 260px;
+	}
+	.avetar-container-hover {
+		width: 260px;
+	}
+	.upload-actions-container {
+		width: 100%;
+	}
+	.upload-actions {
+		margin: 0 auto;
+		width: 260px;
+	}
+}
