@@ -58,27 +58,16 @@ def branch():
                     movie = movies[i]
                     movie_kind_index = movie_kind_to_index(json.loads(movie[2]), 'static/movie-kind-to-index.json')
                     age_distance = abs(2018 - int(movie[3]))
-                    # os.system('touch error_case_2')
-                    # with open('error_case_2', 'w+') as f:
-                    #     f.write(json.dumps(movie_kind_index))
-                    #     f.write(json.dumps(age_distance))
-                    #     f.write(json.dumps(movie[1]))
-                    #     f.close()
                     general_map[str(i)] = grade_giver.FinalScore(movie_label=movie_kind_index, movie_age=age_distance, movie_rate=float(movie[1]) if movie[1]!="" else 0, para={'mood': 0.47 , 'age': 0.03, 'gender': 0.45, 'rate': 0.05})
-                # os.system('touch error_case_3')
-                # with open('error_case_3', 'w+') as f:
-                #     f.write(json.dumps(sorted(zip(general_map.values(), general_map.keys()))))
-                #     f.close()
+                
                 random_index_list = get_random_num()
                 general_movie_rank = sorted(zip(general_map.values(), general_map.keys()), reverse=True)
                 movie_rank = []
                 for index in random_index_list:
                     movie_rank.append(general_movie_rank[index])
-                # movie_rank = sorted(zip(general_map.values(), general_map.keys()), reverse=True)[0:9]
                 info = dict()
                 for j in range(1, 10):
                     selected_movie = movies[int(movie_rank[j -1][1])]
-                    # info['pic%d' % j] = 'static/3/images/bk.jpg'
                     info['pic%d' % j] = get_image_url('static/movies.json', selected_movie[0])
                     info['fun_name%d' % j] = selected_movie[0]
                     info['date%d' % j] = selected_movie[3]

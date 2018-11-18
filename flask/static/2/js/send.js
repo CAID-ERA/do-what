@@ -1,4 +1,3 @@
-// import * as tf from '@tensorflow/tfjs';
 let upload = document.getElementById("upload");
 let imgElement = document.getElementById('avatar');
 let station = document.getElementById('canvas1');
