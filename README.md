@@ -4,7 +4,7 @@ Deploy the flask app by:
 cd Scripts
 sudo sh ./init.sh
 export FLASK_APP = app.py
-cd ../flask/
+cd ../Flask/
 ```
 Run the web app without logging by:
 ```nohup python3 -m flask run -h 0.0.0.0 --port 80 >/dev/null 2>&1 &```
