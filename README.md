@@ -35,9 +35,9 @@ utils
 app.py
 ```
 1.1 recommend:内含推荐算法源码  
-1.2 static:静态文件  
-1.3 templates:用于渲染的模板  
-1.4 utils:开发小工具，后期维护将加入音乐以及其他推荐  
+1.2 static:静态文件(包括HTML、JS、以及一些其他静态资源)
+1.3 templates:用于渲染的HTML模板  
+1.4 utils:代码中部分小功能脚本
 1.5 app.py:包含后端的路由规则以及对应的逻辑  
 
 #### 2.Script:项目部署脚本代码  
