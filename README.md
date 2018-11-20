@@ -43,6 +43,6 @@ app.py
 #### 2.Script:项目部署脚本代码  
 #### 3..gitignore:过滤一些无用的编译的一些残余文档的规则  
 #### 4.LICENSE:许可证  
-#### 5.Readme.md:本文档  
+#### 5.README.md:本文档  
 
 
