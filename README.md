@@ -16,7 +16,7 @@ This app uses a remote MySQL database and it will be closed at around the end of
 If there's any advice please email us at: iiivanzhu@gmail.com  
 
 ## Introduction to our project
-![](https://github.com/xrhe24/do-what/raw/master/static/架构.png) 
+![do-what group](https://github.com/CAID-ERA/do-what/raw/master/Flask/static/architect.png) 
  
 ### 一级目录下：
 ```
