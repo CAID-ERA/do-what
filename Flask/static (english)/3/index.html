@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+		       <audio id="bgm" controls="controls" autoplay="autoplay" loop=-1>
+        <source src="static/bgm/trip.mp3" autoplay="true" type="audio/mpeg" />
+        </audio>	
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Do-What</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="static/3/css/normalize.css">
+        <link rel="stylesheet" href="static/3/css/font-awesome.css">
+        <link rel="stylesheet" href="static/3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="static/3/css/templatemo-style.css">
+        <script src="static/3/js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+        </div>
+
+        <div class="content-bg"></div>
+        <div class="bg-overlay"></div>
+
+        <!-- SITE TOP -->
+        <div class="site-top">
+            <div class="site-header clearfix">
+                <div class="container">
+                    <a href="static/4/html/4.html" target="_blank" class="site-brand pull-left"><strong><span class="blue">Do-</span><span class="green">What</span></strong> Group for fun </a>
+                    <div class="social-icons pull-right">
+                        <ul>
+                            <li><a href="https://github.com/" target="_blank" class="fa fa-github-square"></a></li>
+                            <li><a href="https://www.linux.org/" target="_blank" class="fa fa-linux"></a></li>
+                            <li><a href="https://cn.wordpress.org/" target="_blank" class="fa fa-wordpress"></a></li>
+                            <li><a href="https://m.youtube.com/" target="_blank" class="fa fa-youtube"></a></li>
+                            <li><a href="https://www.reddit.com/" target="_blank" class="fa fa-reddit"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> <!-- .site-header -->
+            <div class="site-banner">
+                <div class="container">
+                    <div class="row" >
+                        <div class="col-md-offset-2 col-md-8 text-center">
+                            <h1 id="commandtitle"><span class="blue">Do-</span><span class="green">What</span> recommend for you!</h1>
+                            <p id="commandpra" ><br/><span class="lighterblue">You looks so {{emotion}}~ We recommend something interesting for you based on our AI algorithm</span><br/><br/>
+                            <a href="#" class="blue bigger">&nbsp &nbsp others&nbsp &nbsp </a><a href="main.html" class="green bigger">&nbsp &nbsp reupload&nbsp &nbsp </a></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <form action="https://www.baidu.com/s" target="_blank" method="get" class="subscribe-form">
+                            <fieldset class="col-md-offset-4 col-md-3 col-sm-8">
+                                <input type="text" id="subscribe-email" placeholder="What's this？Google now~" name="word">
+                            </fieldset>
+                            <fieldset class="col-md-5 col-sm-4">
+                                <input type="submit" id="subscribe-submit" class="button white" value="Search">
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div> <!-- .site-banner -->
+        </div> <!-- .site-top -->
+        
+        <!-- MAIN POSTS -->
+        <div class="main-posts">
+            <div class="container">
+                <div class="row">
+                    <div class="blog-masonry masonry-true">
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="{{pic1}}" alt="Sorry~ The pic disappears^_^">
+                                <div class="title-over">
+                                    <h4><a href="https://www.baidu.com/s?wd={{fun_name1}}" target="_blank">{{fun_name1}}</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+                                        <i class="fa fa-plus"></i>
+                                        <span class="date">{{date1}}</span>
+                                        <h4><a href="https://www.baidu.com/s?wd={{fun_name1}}" target="_blank">{{fun_name1}}</a></h4>
+                                        <p>{{introduction1}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="{{pic2}}" alt="Sorry~图片好像走丢了^_^">
+                                <div class="title-over">
+                                    <h4><a href="https://www.baidu.com/s?wd={{fun_name2}}" target="_blank">{{fun_name2}}</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+                                        <i class="fa fa-plus"></i>
+                                        <span class="date">{{date2}}</span>
+                                        <h4><a href="https://www.baidu.com/s?wd={{fun_name2}}" target="_blank">{{fun_name2}}</a></h4>
+                                        <p>{{introduction2}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="{{pic3}}" alt="Sorry~ The pic disappears^_^">
+                                <div class="title-over">
+                                    <h4><a href="https://www.baidu.com/s?wd={{fun_name3}}" target="_blank">{{fun_name3}}</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+                                        <i class="fa fa-plus"></i>
+                                        <span class="date">{{date3}}</span>
+                                        <h4><a href="https://www.baidu.com/s?wd={{fun_name3}}" target="_blank">{{fun_name3}}</a></h4>
+                                        <p>{{introduction3}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="{{pic4}}" alt="Sorry~ The pic disappears ^_^">
+                                <div class="title-over">
+                                    <h4><a href="https://www.baidu.com/s?wd={{fun_name4}}" target="_blank">{{fun_name4}}</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+                                        <i class="fa fa-plus"></i>
+                                        <span class="date">{{date4}}</span>
+                                        <h4><a href="https://www.baidu.com/s?wd={{fun_name4}}" target="_blank">{{fun_name4}}</a></h4>
+                                        <p>{{introduction4}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="{{pic5}}" alt="Sorry~ The pic disappears ^_^">
+                                <div class="title-over">
+                                    <h4><a href="https://www.baidu.com/s?wd={{fun_name5}}" target="_blank">{{fun_name5}}</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+                                        <i class="fa fa-plus"></i>
+                                        <span class="date">{{date5}}</span>
+                                        <h4><a href="https://www.baidu.com/s?wd={{fun_name5}}" target="_blank">{{fun_name5}}</a></h4>
+                                        <p>{{introduction5}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="{{pic6}}" alt="Sorry~ The pic disappears^_^">
+                                <div class="title-over">
+                                    <h4><a href="https://www.baidu.com/s?wd={{fun_name6}}" target="_blank">{{fun_name6}}</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+                                        <i class="fa fa-plus"></i>
+                                        <span class="date">{{date6}}</span>
+                                        <h4><a href="https://www.baidu.com/s?wd={{fun_name6}}" target="_blank">{{fun_name6}}</a></h4>
+                                        <p>{{introduction6}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="{{pic7}}" alt="Sorry~ The pic disappears ^_^">
+                                <div class="title-over">
+                                    <h4><a href="https://www.baidu.com/s?wd={{fun_name7}}" target="_blank">{{fun_name7}}</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+                                        <i class="fa fa-plus"></i>
+                                        <span class="date">{{date7}}</span>
+                                        <h4><a href="https://www.baidu.com/s?wd={{fun_name7}}" target="_blank">{{fun_name7}}</a></h4>
+                                        <p>{{introduction7}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="{{pic8}}" alt="Sorry~ The pic disappears ^_^">
+                                <div class="title-over">
+                                    <h4><a href="https://www.baidu.com/s?wd={{fun_name8}}" target="_blank">{{fun_name8}}</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+                                        <i class="fa fa-plus"></i>
+                                        <span class="date">{{date8}}</span>
+                                        <h4><a href="https://www.baidu.com/s?wd={{fun_name8}}" target="_blank">{{fun_name8}}</a></h4>
+                                        <p>{{introduction8}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="{{pic9}}" alt="Sorry~ The pic disappears ^_^">
+                                <div class="title-over">
+                                    <h4><a href="https://www.baidu.com/s?wd={{fun_name9}}" target="_blank">{{fun_name9}}</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+                                        <i class="fa fa-plus"></i>
+                                        <span class="date">{{date9}}</span>
+                                        <h4><a href="https://www.baidu.com/s?wd={{fun_name9}}" target="_blank">{{fun_name9}}</a></h4>
+                                        <p>{{introduction9}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="social-icons">
+                            <ul>
+                                <li><a href="https://github.com/" target="_blank" class="fa fa-github-square"></a></li>
+                            		<li><a href="https://www.linux.org/" target="_blank" class="fa fa-linux"></a></li>
+                            		<li><a href="https://cn.wordpress.org/" target="_blank" class="fa fa-wordpress"></a></li>
+                            		<li><a href="https://m.youtube.com/" target="_blank" class="fa fa-youtube"></a></li>
+                            		<li><a href="https://www.reddit.com/" target="_blank" class="fa fa-reddit"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p class="copyright-text">Copyright &copy; Do-What Group
+                        | Infos from <a rel="nofollow" href="https://www.douban.com">豆瓣</a>&<a rel="nofollow" href="http://www.dangdang.com">当当</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="static/3/js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="static/3/js/min/plugins.min.js"></script>
+        <script src="static/3/js/min/main.min.js"></script>
+        <script src="static/3/js/testpic.js"></script>
+
+        <!-- Preloader -->
+        <script type="text/javascript">
+            //<![CDATA[
+            $(window).load(function() { // makes sure the whole site is loaded
+                $('#loader').fadeOut(); // will first fade out the loading animation
+                    $('#loader-wrapper').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+                $('body').delay(350).css({'overflow-y':'visible'});
+            })
+            //]]>
+        </script>
+    </body>
+</html>

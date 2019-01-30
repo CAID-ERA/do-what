@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+		    <audio id="bgm" controls="controls" autoplay="autoplay" loop=-1>
+        <source src="static/bgm/where_love.mp3" autoplay="true" type="audio/mpeg" />
+        </audio>	
+<head>
+	<title>DO WHAT</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/static/2/css/css.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="static/tracking.js-master/build/data/opencv.js"></script>
+	<script src="static/tracking.js-master/build/tracking-min.js"></script>
+  	<script src="static/tracking.js-master/build/data/face-min.js"></script>
+    <script src="static/tracking.js-master/build/data/eye-min.js"></script>
+    <script src="static/tracking.js-master/build/data/mouth-min.js"></script>
+    <script src="static/tracking.js-master/build/data/mouth-min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.10.0"></script>
+    <!-- <script src="https://docs.opencv.org/3.4.1/opencv.js"></script> -->
+</head>
+<body>
+	<div class="main-content">
+		<div class="left-content">
+			<p class="line" id="l1">Life is  beautiful</p>
+			<h1 class="line" id="l2">AI-based analysis</h1>
+			<h2 class="line" id="l3">We customize an entertainment plan for you</h2>
+			<p class="line" id="l4">● Upload a  photo of yourself with full face</p>
+			<p class="line" id="l5">● We will design an entertainment plan for you according to your face</p>
+			<p class="line" id="l6">● Recommend the most suitable movie for you</p>
+		</div>
+		<div class="right-content">
+			<p class="instruction">Please drag your single photo to the frame below</p>
+			<div class="avatar-container" id="avatar-container">
+				<img class="avatar" id="avatar" src="/static/2/pic/patch.png">
+			</div>
+			<div class="upload-actions-container">
+				<ul class="upload-actions">
+					<li>
+						<a id="upload" class="button" href="branch.html">Confirm</a>
+					</li>
+					<li>
+						<a class="button" href="#" onclick="reUpload()">Reupload</a>
+					</li>	
+				</ul>
+			</div>
+		</div>
+	</div>
+	<p class="foot">© 2018 Project | Design by Do-what group</p>
+	<canvas class="invisible" id="canvas1"></canvas>
+	<script src="/static/2/js/main.js"></script>
+	<script src="/static/2/js/send.js"></script>
+</body>
+</html>
